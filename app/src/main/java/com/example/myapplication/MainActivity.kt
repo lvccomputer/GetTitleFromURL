@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
       })()""")
                     }.onSuccess {
                         Log.i("Title", "onPageFinished: $index" )
-
+                        delay(1000)
                         if (index < urlArr.size)
                             binding.webview.loadUrl(urlArr[index++])
                     }
